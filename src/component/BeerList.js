@@ -54,7 +54,7 @@ export default class BeerList extends Component {
                             {filteredBeers.map((beer) => {
                                 return (
                                     <div className="col-md-4 p-3" key={beer.id}>
-                                        <BeerItem name={beer.name} image_url={beer.image_url} description={beer.description.slice(0, 60)} />
+                                        <BeerItem name={beer.name} image_url={beer.image_url} description={beer.description.slice(0, 60)} tagline={beer.tagline.slice(0,30)} />
                                     </div>
                                 );
                             })}
